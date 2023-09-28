@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Import the necessary modules from the 'react' and 'react-dom' libraries.
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Import the 'BrowserRouter' component from 'react-router-dom'.
+// This component is used for client-side routing in your React application.
+import { BrowserRouter } from "react-router-dom";
+
+// Import your main application component, which is named 'App'.
+// This component represents the root of your application.
+import App from "./App";
+
+// Use 'createRoot' from 'react-dom' to create a root for your React application.
+// Pass the DOM element with the ID 'root' to 'createRoot'.
+// This is where your React application will be rendered.
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render your React application within the created root.
 root.render(
-  <React.StrictMode>
+  // Wrap your 'App' component with 'BrowserRouter' to enable client-side routing.
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// Import the necessary modules from the 'react' and 'react-router-dom' libraries.
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+// Import components and styles needed for your application.
+import { Box } from "@mui/material"; // Material-UI component
+import "./App.css"; // Custom CSS
+import Home from "./pages/Home.js"; // Home component
+import Navbar from "./components/Navbar.js"; // Navbar component
+import Footer from "./components/Footer.js"; // Footer component
+
+// Define the main application component, named 'App'.
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    // Use 'Box' from Material-UI for layout and styling.
+    <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
+      {/* Include the 'Navbar' component for navigation. */}
+      <Navbar />
 
+      {/* Use 'Routes' from 'react-router-dom' to manage routing within the app. */}
+      <Routes>
+        {/* Define a route for the root URL ('/') that renders the 'Home' component. */}
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      {/* Include the 'Footer' component at the bottom of the page. */}
+      <Footer />
+    </Box>
+  );
+};
+
+// Export the 'App' component to make it available for use in other parts of your application.
 export default App;
