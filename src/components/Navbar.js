@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 import AnimatedHeading from "./AnimatedHeading";
-import "../App.css";
+import "../css/App.css";
 
 import Logo from "../assets/images/Logo.png";
 

@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 // Import components and styles needed for your application.
 import { Box } from "@mui/material"; // Material-UI component
-import "./App.css"; // Custom CSS
+import "./css/App.css"; // Custom CSS
 import Home from "./pages/Home.js"; // Home component
 import Navbar from "./components/Navbar.js"; // Navbar component
 import Footer from "./components/Footer.js"; // Footer component
