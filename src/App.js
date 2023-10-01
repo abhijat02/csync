@@ -8,6 +8,7 @@ import "./css/App.css"; // Custom CSS
 import Home from "./pages/Home.js"; // Home component
 import Navbar from "./components/Navbar.js"; // Navbar component
 import Footer from "./components/Footer.js"; // Footer component
+import Form from './components/Form'
 
 // Define the main application component, named 'App'.
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         {/* Define a route for the root URL ('/') that renders the 'Home' component. */}
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element ={<Form/>}/>
       </Routes>
 
       {/* Include the 'Footer' component at the bottom of the page. */}
