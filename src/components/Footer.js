@@ -22,7 +22,7 @@ const Footer = () => {
                   </div>
                   <div className='namer'> 
                   <img src='https://e1.pxfuel.com/desktop-wallpaper/924/421/desktop-wallpaper-eren-yeager-icons-eren-icon.jpg' alt='img4'/>
-                  <p> <a href='https://github.com/Chitransh-j' className='repo'>Devesh Dewangan</a></p>
+                  <p> <a href='https://github.com/devesh-d16' className='repo'>Devesh Dewangan</a></p>
                   </div>
             </div>
         </div>
@@ -43,5 +43,6 @@ const Footer = () => {
 </div>
   )
 }
+
 
 export default Footer
